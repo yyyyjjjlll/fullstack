@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* class theme{
+      --bg-color: black;
+      --text-color: 
+    } */
+    .darkmode{
+      --bg-color: black;
+      --text-color: white;
+    }
+    html{
+      --bg-color: white;
+      --text-color: black;
+    }
+    html{
+      color: var(--text-color);
+      background-color: var(--bg-color);
+    }
+    .card{
+      --card-color: red;
+    }
+    .cardTitle{
+      color: var(--card-color);
+    }
+  </style>
+</head>
+<body>
+  <button id="btn">
+    click
+  </button>
+  <div class="card">
+    <p class="cardTitle">
+      hello world!
+    </p>
+  </div>
+  <script>
+    const button = document.getElementById('btn')
+    function handleClick(){
+      const html = document.documentElement
+      console.log(html)
+      // const darkmode = 
+      html.classList.toggle('darkmode')
+    }
+    button.addEventListener('click', handleClick)
+  </script>
+</body>
+</html>
