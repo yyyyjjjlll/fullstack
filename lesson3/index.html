@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2+p+span{
+      color: red;
+    }
+    .btn:active{
+      transform: scale(1.5);
+    }
+    input[type="checkbox"]{
+      color: red;
+      width: 30px;
+      height: 30px;
+      appearance: none;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input[type="checkbox"]:checked{
+      accent-color: red;
+    }
+    input[type="checkbox"]:checked::before{
+      content: '√';
+      color: blue;
+    }
+    input[type="email"]:invalid{
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <h2>1</h2>
+  <p>2</p>
+  <span>3</span>
+  <button class="btn">4</button>
+  <form action="">
+    <input type="checkbox">
+    <input type="email">
+    <button>submit</button>
+  </form>
+</body>
+</html>
