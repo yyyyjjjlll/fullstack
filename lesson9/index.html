@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .word{
+            font-size: 24px;
+            color: black;
+            width: fit-content;
+            position: relative;
+        }
+        .word::after{    
+            position: absolute;
+            left:0;
+            bottom:0;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: palegreen;
+            /* display: none; */
+            /* visibility: hidden; */
+            transform: scale(0);
+            transform-origin: right;
+            transition: transform 1.5s ease;
+        }
+        .word:hover::after{
+            /* width: 100%; */
+            /* background-color: beige; */
+            /* display: block; */
+            /* visibility: visible; */
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        
+        <div class="border"></div>
+    </div> -->
+    <div class="word">products</div>
+</body>
+</html>
