@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .text{
+            background-color: red;
+            
+        }
+        @media screen and (max-width:768px) {
+            .text{
+                background-color: orange;
+            }
+        }
+        @media screen and (max-width:640px) {
+            body{
+                align-items: flex-start;
+            }
+            .text{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text"> amet aut magnam quis optio commodi consequuntur in, ipsam similique.</div>
+</body>
+</html>
